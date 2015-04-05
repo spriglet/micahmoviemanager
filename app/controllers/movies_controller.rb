@@ -3,18 +3,8 @@ class MoviesController < ApplicationController
   def home
     
   end
-  # adds a new movie to the collection and displays
-  def create
-  end
-  #reads a movie 
-  def read
-    
-  end
-  #updates a movie
-  def update
-  end
-  #list a movie collection 
-  def list
+  # Adds a new movie to the collection
+  def new
     
   end
 end
