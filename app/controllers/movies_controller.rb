@@ -1,4 +1,8 @@
 class MoviesController < ApplicationController
+  # home page
+  def home
+    
+  end
   # adds a new movie to the collection and displays
   def create
   end
