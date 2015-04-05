@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+  resources :movies
   # Example resource route with options:
   #   resources :products do
   #     member do
@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-
+  
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
