@@ -1,4 +1,4 @@
-up#!/bin/bash         
+#!/bin/bash         
 git init
 git add .
 git commit -m "Commit"
