@@ -1,9 +1,12 @@
 <script>
 // Shorthand for $( document ).ready()
-$(function() {
-    alert( "ready!" );
-});
-  
+ jQuery.noConflict();
+
+ // Use jQuery via jQuery(...)
+ jQuery(document).ready(function(){
+   jQuery("div").hide();
+ });
+
 
 </script>
 <h1>Micah's Movie Collection</h1>
