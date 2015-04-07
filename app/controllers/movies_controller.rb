@@ -8,6 +8,6 @@ class MoviesController < ApplicationController
    
   end
   def create
-    render plain: params[:movies].inspect
+    render plain: params[:movie].inspect
   end
 end
