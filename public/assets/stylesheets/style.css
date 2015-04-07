@@ -26,9 +26,13 @@ body{
 }
 
 
+.nav a{
+  font-weight:bold;
+  
+}
 .nav a:hover { 
     background-color:#db2525 !important;
-  
+    font-size:17px;
 }
 .active{
    background-color:f48c58;
