@@ -7,13 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
+<div id="MainContent" class="container-fluid">
+    <div id="header" class="row">
       <img src="assets/images/header.png" class="img-responsive">
       <!-- <%= image_tag("footer.png", class: "img-responsive") %> -->
     </div>
     <%= yield %>
-    <div class="row">
+    <div id="footer" class="row">
       <img src="assets/images/footer.png" class="img-responsive">
       <!-- <%= image_tag("footer.png", class: "img-responsive") %> -->
     </div>
