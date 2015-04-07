@@ -14,8 +14,14 @@ body{
 }
 .navbar .container{
   width:100%;
-  
+  padding-left:0%;
+	padding-right:0%;
 }
+
+.navbar{
+	right:1.5%;
+}
+
 @media screen and (min-width: 1024px) {
     .row{
        width:1024px;     
