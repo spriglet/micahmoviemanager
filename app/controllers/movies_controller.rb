@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
    
   end
   def create
-    @article = Movie.new(params[:movie])
+    @article = Article.new(params.require(:movie).permit(:title,:format,:length, :release_year))
 
     @movie.save
     redirect_to @movie
