@@ -3,6 +3,10 @@ class MoviesController < ApplicationController
   def home
     
   end
+  def index
+    @movies = Movie.all
+    
+  end
   # Adds a new movie to the collection
   def new
    
