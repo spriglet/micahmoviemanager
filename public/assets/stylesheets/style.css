@@ -1,8 +1,4 @@
-#mainContent{
-  margin-left: auto;
-  margin-right: auto;
-  width:55%
-}
+
 .row{
    background-color:#fff;
   
@@ -16,5 +12,14 @@ body{
     .row{
        width:1024px;     
       
+    }
+    .navbar{
+        width:1024;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mainContent{
+        
+        width:55%
     }
 }
