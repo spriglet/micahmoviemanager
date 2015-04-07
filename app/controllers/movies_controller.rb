@@ -8,6 +8,9 @@ class MoviesController < ApplicationController
    
   end
   def create
-    render plain: params[:movie].inspect
+    @article = Movie.new(params[:article])
+
+    @movie.save
+    redirect_to @movie
   end
 end
