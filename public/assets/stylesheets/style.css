@@ -21,8 +21,19 @@ body{
 .navbar{
 	width:103%;
   right:1.5%;
+  background-color:#fff;
+  border-style:none;
 }
 
+
+.navbar a:hover { 
+    background-color:#db2525;
+    font-size:16px;
+}
+.active{
+   background-color:f48c58
+
+}
 @media screen and (min-width: 1024px) {
     .row{
        width:1024px;     
