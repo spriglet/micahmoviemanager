@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
   def create
     @movie = Movie.new(movie_params)
     @movie.save
-    redirect_to @home
+    redirect_to :back
   end
   private
   def movie_params
