@@ -6,15 +6,20 @@
  
   <p>
     <%= f.label :Format %><br>
-    <%= f.text_area :format %>
+    <%= radio_button_tag(:format, "VHS") %>
+    <%= label_tag(:format, "VHS") %>
+    <%= radio_button_tag(:format, "DVD") %>
+    <%= label_tag(:format, "VHS") %>
+    <%= radio_button_tag(:format, "Streaming") %>
+    <%= label_tag(:format, "Streaming") %>
   </p>
    <p>
      <%= f.label :Length %><br>
-     <%= f.text_area :length %>
+     <%= f.text_field :length %>
   </p>
   <p>
     <%= f.label :release_year, "Release Year" %><br>
-    <%= f.text_area :release_yaer %>
+    <%= f.text_field :release_yaer %>
   </p>
   <p>
     <%= f.submit %>
