@@ -26,12 +26,12 @@ body{
 }
 
 
-.navbar a:hover { 
-    background-color:#db2525;
-    font-size:16px;
+.nav a:hover { 
+    background-color:#db2525 !important;
+  
 }
 .active{
-   background-color:f48c58
+   background-color:f48c58;
 
 }
 @media screen and (min-width: 1024px) {
