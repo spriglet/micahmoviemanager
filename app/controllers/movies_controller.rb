@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
    
   end
   def create
-    @article = Movie.new(params[:article])
+    @article = Movie.new(params[:movie])
 
     @movie.save
     redirect_to @movie
