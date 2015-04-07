@@ -1,1 +1,22 @@
-<h1>Adds a new movie to the collection</h1>
+<%= form_for :movies do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :Format %><br>
+    <%= f.text_area :format %>
+  </p>
+   <p>
+     <%= f.label :Length %><br>
+     <%= f.text_area :length %>
+  </p>
+  <p>
+    <%= f.label :Release Year %><br>
+    <%= f.text_area :release_yaer %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
