@@ -9,7 +9,7 @@
     <th><% link_to "Rating" , :sort => "rating" %></th>
     <th><% link_to "Format" , :sort => "format" %></th>
   </tr>
-  <% @movies.each do |movie| %>
+  <% for movie in @movies %>
     <tr>
       <td><%= movie.title %></td>
       <td><%= movie.release_year %></td>
