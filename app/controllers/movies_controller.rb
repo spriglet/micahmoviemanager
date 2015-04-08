@@ -7,9 +7,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
   end
   def index
-    
-    @movies = Movie.order(params[:sort])
-    
+    @movies = Movie.order(params[:sort] +" "+ params[:direction])
   end
   
   def edit
