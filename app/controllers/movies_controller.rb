@@ -7,7 +7,23 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
   end
   def index
-    @movies = Movie.all
+    
+ 
+    #sort code 
+    case params[:sortby]
+      when "title"
+        @movies = Movie.order("title")
+      when "release_yaer"
+        puts 'Try harder!'
+      when "length"
+        puts 'You need help!!!'
+      when "rating"
+        puts 'You need help!!!'
+      when "fomrat"
+        puts 'You need help!!!'
+      else
+        @movies = Movie.order("title")
+    end
   end
   def edit
     @movie = Movie.find(params[:id])
