@@ -18,7 +18,12 @@ $( document ).ready(function() {
       },
       messages:{
         "movie[title]":"Please enter a movie title",
-        "movie[format]":"Please select a movie format" 
+        "movie[format]":"Please select a movie format",
+        "movie[length]": {
+					required: "Please enter a username",
+					min: "The minimum movie length is 1 minute",
+          max: "The Maximum movie length is 500 minutes"
+				}
         
       }
     });
