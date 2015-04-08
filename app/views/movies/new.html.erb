@@ -1,7 +1,7 @@
 <%= javascript_tag do %>
  
 $(function() {
-  // Handler for .ready() called.
+ 
   // Javascript Validation Code for Movie Form 
   jQuery.validator.setDefaults({
     debug: true,
@@ -9,15 +9,7 @@ $(function() {
   });
   $("#movie").validate({
     rules: {
-      movie_title:{ "required":true
-      },
-      movie_format: { "required":true
-      },
-      movie_length: { "required":true
-      },
-      movie_release_yaer: { "required":true
-      }
-
+      movie_title:"required":true
     }
   });
 
