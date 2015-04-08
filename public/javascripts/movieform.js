@@ -1,4 +1,4 @@
- $( document ).ready(function() {
+function movievalidate(){
    /* // just for the demos, avoids form submit
     jQuery.validator.setDefaults({
       debug: true,
@@ -39,4 +39,5 @@
 
         }
       });
- });
+
+}
