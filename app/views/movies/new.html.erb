@@ -62,7 +62,7 @@
     <%= f.text_field :title %>
   </p>
   <p>
-     <%= f.label :Format %><br>
+    <%= f.label :Format %><br>
     <%= f.select :format, [['--Select Movie Format--',''],['VHS','VHS'],['DVD','DVD'],['Streaming','Streaming']] %>    
   </p>   
   
@@ -86,7 +86,7 @@
       <%= f.label :rating, '4', :value => '4' %>
       <%= f.radio_button :rating, "5" %> 
       <%= f.label :rating, '5', :value => '5' %>
-      <%= label_tag 'movie[rating]', class: 'error'%>
+      <%= label_tag :movie%w{rating}, class: 'error'%>
   </p>
   <p>
     <%= f.submit %>
