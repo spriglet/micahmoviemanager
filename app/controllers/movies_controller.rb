@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   # home page
+  helper_method :sort_column,:sort_direction
   def home
     
   end
@@ -7,7 +8,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
   end
   def index
-    @movies = Movie.order(params[:sort] +" "+ params[:direction])
+    @movies = Movie.order(sort_column +" "+ sort_direction)
   end
   
   def edit
@@ -38,5 +39,11 @@ class MoviesController < ApplicationController
   private
   def movie_params
     params.require(:movie).permit(:title,:format,:length,:release_year,:rating)
+  end
+  def sort_column
+    params[:sort] || "tilte"
+  end
+  def sort_direction
+    params[:direction] || "desc"
   end
 end
