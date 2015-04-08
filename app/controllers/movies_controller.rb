@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
   end
   # Adds a new movie to the collection
   def new
-    @article = Article.new
+    @movie = Movie.new
   end
   def update
     @movie = Movie.find(params[:id])
@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
     if @article.update(movie_params)
       redirect_to "/movies" 
     else
-      render 'edit'
+      render 'new'
     end
     
   end
