@@ -21,7 +21,6 @@ class MoviesController < ApplicationController
       render 'new'
     end
     @movie.save
-    redirect_to "/movies"
   end
   private
   def movie_params
