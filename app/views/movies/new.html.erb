@@ -3,16 +3,8 @@
 $( document ).ready(function() {
 
   
-    $("#movie").validate({
-      rules: {
-        movie_title:"required"
-      },
-      messages:{
-        movie_title:"Please enter a movie title"
-
-      }
-    });
-
+   
+  
 });
 <% end %>
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
