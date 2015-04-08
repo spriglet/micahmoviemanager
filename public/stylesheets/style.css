@@ -1,3 +1,14 @@
+#movie {
+  width: 670px;
+}
+#movie label.error {
+  margin-left: 10px;
+  width: auto;
+  display: inline;
+  color:red;
+}
+
+
 .row{
    background-color:#fff;
   
