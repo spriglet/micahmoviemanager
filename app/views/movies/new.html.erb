@@ -1,4 +1,21 @@
-<%= form_for :movie, url: movies_path do |f| %>
+<%= javascript_tag do %>
+  // Javascript Validation Code for Form 
+  jQuery.validator.setDefaults({
+    debug: true,
+    success: "valid"
+  });
+   $("#movie").validate({
+     rules: {
+       movie_title: "required",
+       movie_format: "required",
+       movie_length: "required",
+       movie_release_yaer: "required",
+       
+     }
+   });
+});
+<% end %>
+<%= form_for :movie,:id =>"movie", url: movies_path do |f| %>
   <p>
     <%= f.label :Title %><br>
     <%= f.text_field :title %>
