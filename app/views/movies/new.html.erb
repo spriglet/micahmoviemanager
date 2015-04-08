@@ -1,21 +1,21 @@
 <%= javascript_tag do %>
  
-$(function() {
- 
-  // Javascript Validation Code for Movie Form 
-  jQuery.validator.setDefaults({
-    debug: true,
-    success: "valid"
-  });
-  $("#movie").validate({
-    rules: {
-      movie_title:"required"
-    },
-    messages:{
-      movie_title:"Please enter a movie title"
+$( document ).ready(function() {
 
-    }
-  });
+    // Javascript Validation Code for Movie Form 
+    jQuery.validator.setDefaults({
+      debug: true,
+      success: "valid"
+    });
+    $("#movie").validate({
+      rules: {
+        movie_title:"required"
+      },
+      messages:{
+        movie_title:"Please enter a movie title"
+
+      }
+    });
 
 });
 <% end %>
