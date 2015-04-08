@@ -9,7 +9,12 @@ $( document ).ready(function() {
    $("#movie").validate({
       rules: {
         "movie[title]":"required",
-        "movie[format]":"required"
+        "movie[format]":"required",
+        "movie[length]": {
+					required: "Please enter the movie length",
+					min: 1,
+          max: 500
+        }
       },
       messages:{
         "movie[title]":"Please enter a movie title",
@@ -28,7 +33,7 @@ $( document ).ready(function() {
   </p>
   <p>
      <%= f.label :Format %><br>
-    <%= f.select :format, [['--Select Movie Format--',''],['VHS','VHS'],['DVD','DVD'],['Streaming','Streaming']] %>    
+    <%= f.select :format, [['--Select Movie Format--',],['VHS','VHS'],['DVD','DVD'],['Streaming','Streaming']] %>    
   </p>   
   
    <p>
