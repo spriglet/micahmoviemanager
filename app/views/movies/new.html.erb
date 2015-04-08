@@ -1,11 +1,4 @@
-<%= javascript_tag do %>
-$( document ).ready(function() {
 
-  movievalidate();
-
-});
- 
-<% end %>
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
 <%= field_set_tag do %>
   <% if @movie.errors.any? %>
