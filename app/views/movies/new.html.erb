@@ -44,7 +44,7 @@ $( document ).ready(function() {
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
 <%= field_set_tag do %>
 <p>
-    <%= f.label :Title %><br>
+    <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
   <p>
@@ -72,6 +72,7 @@ $( document ).ready(function() {
       <%= f.label :rating, '4', :value => '4' %>
       <%= f.radio_button :rating, "5" %> 
       <%= f.label :rating, '5', :value => '5' %>
+      <%= f.label :rating, :class => 'error' %>
   </p>
   <p>
     <%= f.submit %>
