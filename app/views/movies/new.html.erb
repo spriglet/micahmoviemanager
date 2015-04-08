@@ -14,7 +14,13 @@ $( document ).ready(function() {
 					required:true,
 					min: 1,
           max: 500
-        }
+        },
+        "movie[release_year]": {
+					required:true,
+					min: 1800,
+          max: 2100
+        },
+        "movie[rating]":"required"
       },
       messages:{
         "movie[title]":"Please enter a movie title",
@@ -23,6 +29,11 @@ $( document ).ready(function() {
 					required: "Please enter a username",
 					min: "The minimum movie length is 1 minute",
           max: "The Maximum movie length is 500 minutes"
+				},
+        "movie[length]": {
+					required: "Please enter a username",
+					min: "The minimum release year is 1800",
+          max: "The maximum relase_yaer is 2100"
 				}
         
       }
