@@ -43,7 +43,20 @@ $( document ).ready(function() {
 <% end %>
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
 <%= field_set_tag do %>
-<p>
+  <% if @movies.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@movie.errors.count, "error") %> prohibited
+        this movie from being saved:
+      </h2>
+      <ul>
+        <% @movie.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
