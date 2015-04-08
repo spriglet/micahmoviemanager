@@ -1,5 +1,5 @@
 <%= javascript_tag do %>
- 
+ /*
 $( document ).ready(function() {
  /* // just for the demos, avoids form submit
   jQuery.validator.setDefaults({
@@ -40,6 +40,7 @@ $( document ).ready(function() {
     });
   
 });
+*/
 <% end %>
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
 <%= field_set_tag do %>
