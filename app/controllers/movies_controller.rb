@@ -12,9 +12,9 @@ class MoviesController < ApplicationController
     #sort code 
     
     if ['title', 'release_year', 'length','rating','format','title'].include?params[:sort_by]==true
-       @movies = Movie.All.order(params[:sort_by])
+       @movies = Movie.order(params[:sort_by])
     else 
-      @movies = Movie.All.order("title");
+      @movies = Movie.order("release_year");
     end
   end
   
