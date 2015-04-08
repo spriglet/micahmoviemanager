@@ -3,11 +3,11 @@
 
 <table>
   <tr>
-    <th><% link_to "Title"  :sort => "title" %></th>
-    <th><% link_to "Release Year"  :sort => "release_year" %></th>
-    <th><% link_to "Length"  :sort => "length" %></th>
-    <th><% link_to "Rating"  :sort => "rating" %></th>
-    <th><% link_to "Format" :sort => "format" %></th>
+    <th><% link_to "Title" , :sort => "title" %></th>
+    <th><% link_to "Release Year" , :sort => "release_year" %></th>
+    <th><% link_to "Length" , :sort => "length" %></th>
+    <th><% link_to "Rating" , :sort => "rating" %></th>
+    <th><% link_to "Format" , :sort => "format" %></th>
   </tr>
   <% @movies.each do |movie| %>
     <tr>
