@@ -15,7 +15,7 @@
    });
 });
 <% end %>
-<%= form_for :movie,:id =>"movie", url: movies_path do |f| %>
+<%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
   <p>
     <%= f.label :Title %><br>
     <%= f.text_field :title %>
