@@ -10,17 +10,17 @@ class MoviesController < ApplicationController
     
  
     #sort code 
-    case params[:sortby]
+    case params[:sort_by]
       when "title"
         @movies = Movie.order("title")
       when "release_yaer"
-        puts 'Try harder!'
+        @movies = Movie.order("release_yaer")
       when "length"
-        puts 'You need help!!!'
+        @movies = Movie.order("length")
       when "rating"
-        puts 'You need help!!!'
+         @movies = Movie.order("rating")
       when "fomrat"
-        puts 'You need help!!!'
+         @movies = Movie.order("format")
       else
         @movies = Movie.order("title")
     end
