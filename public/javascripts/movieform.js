@@ -1,9 +1,4 @@
-function movievalidate(){
-   /* // just for the demos, avoids form submit
-    jQuery.validator.setDefaults({
-      debug: true,
-      success: "valid"
-    }); */
+$( document ).ready(function() {
      $("#movie").validate({
         rules: {
           "movie[title]":"required",
@@ -40,4 +35,4 @@ function movievalidate(){
         }
       });
 
-}
+});
