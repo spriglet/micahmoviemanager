@@ -1,7 +1,11 @@
 <%= javascript_tag do %>
  
 $( document ).ready(function() {
-
+  // just for the demos, avoids form submit
+  jQuery.validator.setDefaults({
+    debug: true,
+    success: "valid"
+  });
    $("#movie").validate({
       rules: {
         movie_title:"required"
