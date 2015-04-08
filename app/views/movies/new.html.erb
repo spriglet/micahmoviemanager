@@ -8,14 +8,12 @@ $( document ).ready(function() {
   });
    $("#movie").validate({
       rules: {
-        movie_title:"required"
+        movie[title]:"required"
       },
       messages:{
-        movie_title:"Please enter a movie title"
+        movie[title]:"Please enter a movie title"
 
-      },errorPlacement: function( error, element ) {
-			    error.insertAfter( element.parent() );
-		}
+      }
     });
   
 });
