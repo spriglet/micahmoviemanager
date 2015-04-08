@@ -10,21 +10,14 @@ class MoviesController < ApplicationController
     
  
     #sort code 
-    case params[:sort_by]
-      when "title"
-        @movies = Movie.reorder("title")
-      when "release_yaer"
-        @movies = Movie.reorder("release_yaer")
-      when "length"
-        @movies = Movie.reorder("length")
-      when "rating"
-         @movies = Movie.reorder("rating")
-      when "fomrat"
-         @movies = Movie.reorder("format")
-      else
-        @movies = Movie.reorder("title")
+    
+    if ['title', 'release_year', 'length','rating','format','title'].include?params[:sort_by]==true
+       @movies = Movie.order(params[:sort_by])
+    else 
+      @movies = Movie.order("title");
     end
   end
+  
   def edit
     @movie = Movie.find(params[:id])
     
