@@ -11,6 +11,7 @@ class MoviesController < ApplicationController
   end
   def edit
     @movie = Movie.find(params[:id])
+    
   end
   # Adds a new movie to the collection
   def new
@@ -18,6 +19,11 @@ class MoviesController < ApplicationController
   end
   def update
     @movie = Movie.find(params[:id])    
+    if @movie.update(movie_params)
+      redirect_to @movie
+    else
+      render 'edit'
+    end
   end
   def create
     @movie = Movie.new(movie_params)
