@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
   end
   # Adds a new movie to the collection
   def new
-   
+    @article = Article.new
   end
   def update
     @movie = Movie.find(params[:id])
