@@ -8,14 +8,8 @@ class MoviesController < ApplicationController
   end
   def index
     
- 
-    #sort code 
+    Movies.order(params[:sort])
     
-    if ['title', 'release_year', 'length','rating','format','title'].include?params[:sort_by]==true
-       @movies = Movie.order(params[:sort_by])
-    else 
-      @movies = Movie.order("release_year");
-    end
   end
   
   def edit
