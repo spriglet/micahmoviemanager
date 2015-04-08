@@ -12,17 +12,17 @@ class MoviesController < ApplicationController
     #sort code 
     case params[:sort_by]
       when "title"
-        @movies = Movie.order("title")
+        @movies = Movie.reorder("title")
       when "release_yaer"
-        @movies = Movie.order("release_yaer")
+        @movies = Movie.reorder("release_yaer")
       when "length"
-        @movies = Movie.order("length")
+        @movies = Movie.reorder("length")
       when "rating"
-         @movies = Movie.order("rating")
+         @movies = Movie.reorder("rating")
       when "fomrat"
-         @movies = Movie.order("format")
+         @movies = Movie.reorder("format")
       else
-        @movies = Movie.order("title")
+        @movies = Movie.reorder("title")
     end
   end
   def edit
