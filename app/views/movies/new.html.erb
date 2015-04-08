@@ -6,10 +6,14 @@
   });
    $("#movie").validate({
      rules: {
-       movie_title: "required",
-       movie_format: "required",
-       movie_length: "required",
-       movie_release_yaer: "required"
+       movie_title:{ "required":true
+       },
+       movie_format: { "required":true
+       },
+       movie_length: { "required":true
+       },
+       movie_release_yaer: { "required":true
+       }
        
      }
    });
