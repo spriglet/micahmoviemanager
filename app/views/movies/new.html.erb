@@ -1,18 +1,20 @@
 <%= javascript_tag do %>
  
 $( document ).ready(function() {
-  // just for the demos, avoids form submit
+ /* // just for the demos, avoids form submit
   jQuery.validator.setDefaults({
     debug: true,
     success: "valid"
-  });
+  }); */
    $("#movie").validate({
       rules: {
-        "movie[title]":"required"
+        "movie[title]":"required",
+        "movie[format]":"required"
       },
       messages:{
-        "movie[title]":"Please enter a movie title"
-
+        "movie[title]":"Please enter a movie title",
+        "movie[title]":"Please enter a movie title" 
+        
       }
     });
   
@@ -26,7 +28,7 @@ $( document ).ready(function() {
   </p>
   <p>
      <%= f.label :Format %><br>
-    <%= f.select :format, [['VHS','VHS'],['DVD','DVD'],['Streaming','Streaming']] %>    
+    <%= f.select :format, [['--Select Movie Format--']['VHS','VHS'],['DVD','DVD'],['Streaming','Streaming']] %>    
   </p>   
   
    <p>
