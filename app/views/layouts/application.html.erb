@@ -5,13 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag "style", 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jqueryvalidation', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <div id="mainContent" class="container-fluid align-center">
     <div id="header" class="row">
-
       <%=image_tag("header.png", alt: "Example Image",class: "img-responsive")%>
     </div>
   <nav class="navbar navbar-inverse">
