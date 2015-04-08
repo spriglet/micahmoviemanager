@@ -21,7 +21,8 @@ $( document ).ready(function() {
 });
 <% end %>
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
-  <p>
+<%= field_set_tag do %>
+<p>
     <%= f.label :Title %><br>
     <%= f.text_field :title %>
   </p>
@@ -54,4 +55,5 @@ $( document ).ready(function() {
   <p>
     <%= f.submit %>
   </p>
+<% end %>
 <% end %>
