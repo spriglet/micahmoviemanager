@@ -36,7 +36,13 @@ $( document ).ready(function() {
           max: "The maximum relase_yaer is 2100"
 				}
         
-      }
+      },
+      errorPlacement: function(error, element) {
+        error.html('your error message here');
+        if(element.closest('.form_field').find('label.error').length == 0){
+          error.insertBefore( element.closest('.form_field').find('.error_message_holder') );
+        }
+    } 
     });
   
 });
@@ -72,7 +78,6 @@ $( document ).ready(function() {
       <%= f.label :rating, '4', :value => '4' %>
       <%= f.radio_button :rating, "5" %> 
       <%= f.label :rating, '5', :value => '5' %>
-      <%= label_tag :'movie[rating]', class: 'error'%>
   </p>
   <p>
     <%= f.submit %>
