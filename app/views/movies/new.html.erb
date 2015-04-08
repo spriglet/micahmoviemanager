@@ -1,22 +1,26 @@
 <%= javascript_tag do %>
-  // Javascript Validation Code for Form 
-  jQuery.validator.setDefaults({
-    debug: true,
-    success: "valid"
+ 
+  $(function() {
+    // Handler for .ready() called.
+      // Javascript Validation Code for Movie Form 
+      jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
+      });
+       $("#movie").validate({
+         rules: {
+           movie_title:{ "required":true
+           },
+           movie_format: { "required":true
+           },
+           movie_length: { "required":true
+           },
+           movie_release_yaer: { "required":true
+           }
+
+         }
+       });
   });
-   $("#movie").validate({
-     rules: {
-       movie_title:{ "required":true
-       },
-       movie_format: { "required":true
-       },
-       movie_length: { "required":true
-       },
-       movie_release_yaer: { "required":true
-       }
-       
-     }
-   });
 });
 <% end %>
 <%= form_for :movie,:html => {:id => "movie"}, url: movies_path do |f| %>
