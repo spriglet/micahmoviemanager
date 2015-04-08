@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
     @movies = Movie.all
   end
   def edit
-    @article = Article.find(params[:id])
+    @movie = Movie.find(params[:id])
   end
   # Adds a new movie to the collection
   def new
