@@ -4,11 +4,11 @@ class MoviesController < ApplicationController
     
   end
   def show
-    @movies = Movie.find(params[:id])
+    @movie = Movie.find(params[:id])
   end
   def index
     
-    Movie.order(params[:sort])
+    @movies = Movie.order(params[:sort])
     
   end
   
