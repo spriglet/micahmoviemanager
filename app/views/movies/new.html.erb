@@ -72,7 +72,7 @@ $( document ).ready(function() {
       <%= f.label :rating, '4', :value => '4' %>
       <%= f.radio_button :rating, "5" %> 
       <%= f.label :rating, '5', :value => '5' %>
-      <%= label_tag 'moving[rating]', nil, class: 'error'%>
+      <%= label_tag :select, for:'moving[rating]' , class: 'error'%>
   </p>
   <p>
     <%= f.submit %>
