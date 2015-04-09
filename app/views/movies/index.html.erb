@@ -20,6 +20,10 @@
       <td><%= movie.format %></td>
       <td><%= link_to 'Show', movie_path(movie) %></td>
       <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+      <td><%= link_to 'Delete', movie_path(movie),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+      </td>
     </tr>
   <% end %>
 </table>
