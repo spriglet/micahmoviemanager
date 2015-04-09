@@ -41,7 +41,7 @@ class MoviesController < ApplicationController
     params.require(:movie).permit(:title,:format,:length,:release_year,:rating)
   end
   def sort_column
-    Movies.column_names.include?(params[:sort]) || params[:sort] : "title"
+    Movie.column_names.include?(params[:sort]) || params[:sort] : "title"
   end
   def sort_direction
     %w[asc dec].include?(params[:direction]) || params[:direction] : "asc"
