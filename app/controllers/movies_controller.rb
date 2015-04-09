@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     @movie.destroy
  
-    redirect_to movie_path
+    redirect_to :back
   end
   def show
     @movie = Movie.find(params[:id])
