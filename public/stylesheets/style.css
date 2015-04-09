@@ -28,6 +28,21 @@ body{
   background-color:#000;
   
 }
+
+.btn-lg, .btn-group-lg > .btn{
+    
+  
+}
+
+.btn-primary{
+  color:#fff;
+  background-color:#000;
+  border-color:#000;
+  margin-bottom:1%;
+  width:16%;
+  font-size:16px !important;
+  
+}
 #mainContent{
   background-color:#fff;
   
