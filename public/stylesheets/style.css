@@ -9,7 +9,7 @@
 }
 
 .movieTitle{
-  text-align:right;
+  text-align:left !important;
 }
 
 .row{
