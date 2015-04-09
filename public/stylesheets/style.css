@@ -75,11 +75,11 @@ font-weight: bold;
 }
 th a{
 color:#fff;
-
+text-align:center;  
 }
 th:hover{
   background-color:#000;
-
+  
 }
 td {
 background: #FAFAFA  !important;
