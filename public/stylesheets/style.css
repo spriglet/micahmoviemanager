@@ -71,15 +71,15 @@ th {
 width 100% !important;
 background: #f05050;  /* Darken header a bit */
 font-weight: bold;
-
+text-align:center;
 }
 th a{
-color:#fff;
-text-align:center;  
+color:#ffffff;
+  
 }
 th:hover{
   background-color:#000;
-  
+  color:#ffffff;
 }
 td {
 background: #FAFAFA  !important;
