@@ -68,10 +68,19 @@ transition: all 0.3s  !important;  /* Simple transition for hover effect */
 }
 
 th {
-background: #DFDFDF  !important;  /* Darken header a bit */
-font-weight: bold  !important;
-}
+width 100% !important;
+background: #f05050;  /* Darken header a bit */
+font-weight: bold;
 
+}
+th a{
+color:#fff;
+
+}
+th:hover{
+  background-color:#000;
+
+}
 td {
 background: #FAFAFA  !important;
 text-align: center  !important;
@@ -82,8 +91,6 @@ tr:nth-child(even) td { background: #F1F1F1  !important; }
 
 /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
 tr:nth-child(odd) td { background: #FEFEFE  !important; }  
-
-tr td:hover { background: #666; color: #FFF  !important; } /* Hover cell effect! */
 
 
 @media screen and (min-width: 1024px) {
