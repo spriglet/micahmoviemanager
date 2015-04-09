@@ -1,6 +1,6 @@
 class MoviesController < ApplicationController
   # home page
-  helper_method :sort_column,:sort_direction
+  helper_method :sort_column , :sort_direction
   def home
     
   end
