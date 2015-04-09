@@ -58,6 +58,7 @@ body{
 .nav a:hover { 
     background-color:#db2525 !important;
     font-size:17px;
+    color:#fff !important;
 }
 .active{
    background-color:f48c58;
