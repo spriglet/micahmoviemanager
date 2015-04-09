@@ -12,6 +12,14 @@
   text-align:left !important;
 }
 
+a{
+  color:#f79c6e !important;
+  
+}
+a:hover{
+  
+  color:#f79c6e!important;
+}
 .row{
    background-color:#fff;
   
