@@ -74,16 +74,20 @@ font-weight: bold;
 text-align:center;
 }
 th a{
-color:#ffffff;
+  color:#fff;
+  text-align:center;
+}
+th a:hover{
+   color:#fff;
   
 }
 th:hover{
   background-color:#000;
-  color:#ffffff;
+ 
 }
 td {
-background: #FAFAFA  !important;
-text-align: center  !important;
+  background: #FAFAFA  !important;
+  text-align: center  !important;
 }
 
 /* Cells in even rows (2,4,6...) are one color */ 
