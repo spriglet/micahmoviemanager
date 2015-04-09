@@ -8,6 +8,9 @@
   color:red;
 }
 
+.movieTitle{
+  text-align:right;
+}
 
 .row{
    background-color:#fff;
