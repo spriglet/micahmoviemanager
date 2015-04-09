@@ -29,10 +29,6 @@ body{
   
 }
 
-.btn-lg, .btn-group-lg > .btn{
-    
-  
-}
 
 .btn-primary{
   color:#fff;
@@ -42,6 +38,13 @@ body{
   width:16%;
   font-size:16px !important;
   text-align:center;
+  font-weight:bold;
+}
+
+.btn-primary:hover{
+  background-color:#db2525;
+  color:#fff !important;
+  border:red;
 }
 #mainContent{
   background-color:#fff;
