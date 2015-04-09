@@ -85,12 +85,12 @@ font-weight: bold;
 text-align:center;
 }
 th a{
-  color:#fff;
+  color:#fff !important;
   text-align:center;
   display:block;
 }
 th a:hover{
-   color:#fff;
+   color:#fff !important;
    text-decoration:none;
    
   
