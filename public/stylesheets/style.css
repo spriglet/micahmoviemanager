@@ -35,10 +35,11 @@ body{
   background-color:#000;
   border-color:#000;
   margin-bottom:1%;
-  width:16%;
-  font-size:16px !important;
+  width:12%;
+  font-size:14px !important;
   text-align:center;
   font-weight:bold;
+  float:right !important;
 }
 
 .btn-primary:hover{
