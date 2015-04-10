@@ -28,6 +28,7 @@ class MoviesController < ApplicationController
   def new
     @movie = Movie.new
   end
+  # update a movie
   def update
     @movie = Movie.find(params[:id])    
     if @movie.update(movie_params)
@@ -36,6 +37,7 @@ class MoviesController < ApplicationController
       render 'edit'
     end
   end
+  # create a new movie
   def create
     @movie = Movie.new(movie_params)
     if @movie.save
