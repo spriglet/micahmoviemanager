@@ -19,12 +19,12 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.order(sort_column + " " + sort_direction)
   end
-  #edit movies
+  #edit new movie form 
   def edit
     @movie = Movie.find(params[:id])
     
   end
-  # Adds a new movie to the collection
+  # Add a new movie form 
   def new
     @movie = Movie.new
   end
@@ -48,14 +48,16 @@ class MoviesController < ApplicationController
     @movie.save
   end
   private
-  #sort by specific movie field 
+ 
+  # params for movie fields. 
   def movie_params
     params.require(:movie).permit(:title,:format,:length,:release_year,:rating)
   end
-  #sort by asc desc
+  #sort by specific movie field 
   def sort_column
     Movie.column_names.include?(params[:sort]) ? params[:sort] : "title"
   end
+    #sort by asc desc
   def sort_direction
     %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
