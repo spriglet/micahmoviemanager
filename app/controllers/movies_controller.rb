@@ -4,19 +4,22 @@ class MoviesController < ApplicationController
   def home
     
   end
+  # Delete movies
   def destroy
     @movie = Movie.find(params[:id])
     @movie.destroy
  
     redirect_to :back
   end
+  # Show Movies
   def show
     @movie = Movie.find(params[:id])
   end
+  # Get movie list
   def index
     @movies = Movie.order(sort_column + " " + sort_direction)
   end
-  
+  #edit movies
   def edit
     @movie = Movie.find(params[:id])
     
@@ -43,9 +46,11 @@ class MoviesController < ApplicationController
     @movie.save
   end
   private
+  #sort by specific movie field 
   def movie_params
     params.require(:movie).permit(:title,:format,:length,:release_year,:rating)
   end
+  #sort by asc desc
   def sort_column
     Movie.column_names.include?(params[:sort]) ? params[:sort] : "title"
   end
