@@ -1,6 +1,8 @@
       <div class="row">
             <div class="col-lg-12">
-              <%=image_tag("moviemanager.png", alt: "Movie Manager Main Image",class: "img-responsive")%>
+              
+              <%= link_to image_tag("moviemanager.png", :border=>0), :action => 'index', :controller => 'movies', :class => 'img-responsive' %>
+
             </div>
             
         </div>
