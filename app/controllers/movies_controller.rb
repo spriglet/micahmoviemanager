@@ -19,12 +19,12 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.order(sort_column + " " + sort_direction)
   end
-  #edit new movie form 
+  #edit new movie view 
   def edit
     @movie = Movie.find(params[:id])
     
   end
-  # Add a new movie form 
+  # Add a new movie view
   def new
     @movie = Movie.new
   end
