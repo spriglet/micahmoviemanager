@@ -2,7 +2,13 @@
 .splash{
   padding-left:0px !important;
   padding-right:0px !important;
- 
+  
+}
+
+h2{
+  font-family:"Times New Roman", Times, serif;
+  text-align:center;
+  font-size:30px;
 }
 #movie {
   width: 670px;
@@ -14,6 +20,11 @@
   color:red;
 }
 
+.directions{
+   font-style: italic;
+   font-size:10px;
+  
+}
 .movieTitle{
   text-align:left !important;
 }
@@ -142,7 +153,9 @@ tr:nth-child(odd) td { background: #FEFEFE  !important; }
        width:1024px;     
       
     }
-    
+    h2{
+      text-align:left;  
+    }  
     #mainContent{
         
         width:1024px;
