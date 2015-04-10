@@ -11,11 +11,11 @@ class MoviesController < ApplicationController
  
     redirect_to :back
   end
-  # Show Movies
+  # Show Movies view
   def show
     @movie = Movie.find(params[:id])
   end
-  # Get movie list
+  # Get movie list view
   def index
     @movies = Movie.order(sort_column + " " + sort_direction)
   end
@@ -24,7 +24,7 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
     
   end
-  # Add a new movie view
+  # Add a new movie view 
   def new
     @movie = Movie.new
   end
